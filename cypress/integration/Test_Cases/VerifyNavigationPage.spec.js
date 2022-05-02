@@ -1,7 +1,7 @@
 
 describe('Check Navigation Page', () => {
 
-    beforeEach('Visit website', () => {
+    beforeEach('Visit website Airportlabs', () => {
         cy.visit('/');
     })
 
@@ -45,7 +45,7 @@ describe('Check Navigation Page', () => {
 
     })
 
-    it.only('Verify logo is visible',()=>{
+    it('Verify logo is visible',()=>{
         cy.get('.logo')
             .should('be.visible')
             .and('have.attr','src')
